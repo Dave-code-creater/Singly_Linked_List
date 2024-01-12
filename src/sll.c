@@ -134,7 +134,7 @@ void Priting_Inverse_Sll(Node *head)
 }
 
 // Function to insert a node at the head of the linked list
-extern Node *Insert_At_Head(Node *head, Node *tmp)
+Node *Insert_At_Head(Node *head, Node *tmp)
 {
     if (tmp != NULL)
     {
@@ -144,7 +144,7 @@ extern Node *Insert_At_Head(Node *head, Node *tmp)
 }
 
 // Function to insert a node at a specified position in the linked list
-extern void Insert_At_Middle(Node *head, Node *tmp, int position)
+void Insert_At_Middle(Node *head, Node *tmp, int position)
 {
     Node *Current = head;
     for (int i = 0; i < position - 1; i++)
@@ -176,7 +176,7 @@ void Insert_At_Tail(Node *head, Node *tmp)
     }
 }
 
-extern Node* Sort_ASC(Node* head)
+Node* Sort_ASC(Node* head)
 {
     Node* tmp = head;
     int Current = tmp->value;
@@ -198,7 +198,7 @@ extern Node* Sort_ASC(Node* head)
     return head;
 }
 
-extern Node* Sort_DESC(Node *head)
+Node* Sort_DESC(Node *head)
 {
     Node* tmp = head;
     int Current = tmp->value;
@@ -219,7 +219,7 @@ extern Node* Sort_DESC(Node *head)
 }
 
 // Function to check if the linked list is empty
-extern char *Is_Empty(Node *head)
+char *Is_Empty(Node *head)
 {
     if (head == NULL)
     {
@@ -232,7 +232,7 @@ extern char *Is_Empty(Node *head)
 }
 
 // Function to get the number of nodes from the user
-extern int Length_Input()
+int Length_Input()
 {
     printf("Input the length of the linked list: ");
     int length = Get_Number();
@@ -240,7 +240,7 @@ extern int Length_Input()
 }
 
 // Function to get a positive integer from the user
-extern int Get_Number()
+int Get_Number()
 {
     int number;
     do
@@ -253,7 +253,7 @@ extern int Get_Number()
 }
 
 // Function to get the current time as a string
-extern const char *Get_Time()
+const char *Get_Time()
 {
     struct tm *ptr;
     time_t t;
@@ -263,7 +263,7 @@ extern const char *Get_Time()
 }
 
 // Write all the answer of executing all the functions into a file named "sll.txt" differ by enter character
-extern void Write_Log(Node *head)
+void Write_Log(Node *head)
 {
     FILE *fptr;
     fptr = fopen("sll.txt", "a");

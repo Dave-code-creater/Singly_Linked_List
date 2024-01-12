@@ -318,3 +318,73 @@ The time of executing the program: Sat Nov 18 17:37:36 2023
 The Linked List: 23 ---- >23 ---- >53 ---- >1 ---- >
 The Length of the Linked List: 4
 Is the Linked List empty: false
+
+
+The time of executing the program: Fri Jan 12 16:38:21 2024
+
+The Linked List: 1 ---- >2 ---- >3 ---- >
+The Length of the Linked List: 3
+Is the Linked List empty: false
+
+
+The time of executing the program: Fri Jan 12 16:38:21 2024
+
+The Linked List: 1 ---- >2 ---- >3 ---- >
+The Length of the Linked List: 3
+Is the Linked List empty: false
+
+
+The time of executing the program: Fri Jan 12 16:38:50 2024
+
+The Linked List: 1 ---- >2 ---- >3 ---- >
+The Length of the Linked List: 3
+Is the Linked List empty: false
+
+
+The time of executing the program: Fri Jan 12 16:38:50 2024
+
+The Linked List: 1 ---- >2 ---- >3 ---- >
+The Length of the Linked List: 3
+Is the Linked List empty: false
+
+
+The time of executing the program: Fri Jan 12 16:39:28 2024
+
+The Linked List: 1 ---- >2 ---- >3 ---- >
+The Length of the Linked List: 3
+Is the Linked List empty: false
+
+
+The time of executing the program: Fri Jan 12 16:39:28 2024
+
+The Linked List: 1 ---- >2 ---- >3 ---- >
+The Length of the Linked List: 3
+Is the Linked List empty: false
+
+
+The time of executing the program: Fri Jan 12 16:39:48 2024
+
+The Linked List: 1 ---- >2 ---- >3 ---- >
+The Length of the Linked List: 3
+Is the Linked List empty: false
+
+
+The time of executing the program: Fri Jan 12 16:39:48 2024
+
+The Linked List: 1 ---- >2 ---- >3 ---- >
+The Length of the Linked List: 3
+Is the Linked List empty: false
+
+
+The time of executing the program: Fri Jan 12 16:51:17 2024
+
+The Linked List: 1 ---- >2 ---- >3 ---- >
+The Length of the Linked List: 3
+Is the Linked List empty: false
+
+
+The time of executing the program: Fri Jan 12 16:51:17 2024
+
+The Linked List: 1 ---- >2 ---- >3 ---- >
+The Length of the Linked List: 3
+Is the Linked List empty: false

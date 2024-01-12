@@ -7,6 +7,7 @@ This C project provides a set of functions for working with singly linked lists.
 - [Requirements](#requirements)
 - [Usage](#usage)
 - [Functions](#functions)
+- [Automation](#automation)
 - [Advanced Usage](#advanced-usage)
 - [Contributing](#contributing)
 - [License](#license)
@@ -60,6 +61,14 @@ int Length(Node *head): Function to calculate the length of a singly linked list
 void Priting_Inverse_Sll(Node *head): Function to print the elements of a singly linked list in reverse order.
 
 (Additional functions can be added as needed for your project.)
+
+## Automation
+Dowload the package and run the shell scripts. I overwrite the file with chmod +x. You feel free to write.
+```shell
+./run.sh
+```
+
+
 
 ## Advanced Usage
 This project is open for further development. You can add additional functions and features to suit your specific requirements. Feel free to customize and extend the project according to your needs.
