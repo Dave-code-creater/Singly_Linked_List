@@ -1,6 +1,11 @@
 #!/bin/bash
 
-git clone https://github.com/Dave-code-creater/Singly_Linked_List.git
+if [ -d "Singly_Linked_List" ]; then
+  cd Singly_Linked_List/
+else
+  git clone https://github.com/Dave-code-creater/Singly_Linked_List.git
+  cd Singly_Linked_List/
+fi
 
 make
 
@@ -10,14 +15,13 @@ chmod +x run.sh
 
 ./sll
 
-file_content=$(<sll.txt)
 
 if [[ "$OSTYPE" == "linux-gnu"* ]]; then
-        xdg-open "$file_content"
+        vim sll.txt
 elif [[ "$OSTYPE" == "darwin"* ]]; then
-        open "$file_content"
+        open sll.txt
 elif [[ "$OSTYPE" == "msys"* || "$OSTYPE" == "cygwin" ]]; then
-        start  "$file_content"
+        start  sll.txt
 else
         echo "OS not support"
 fi
