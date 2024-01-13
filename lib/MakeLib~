@@ -1,0 +1,12 @@
+# Compiler to use
+CC = gcc
+
+# Compiler flags
+CFLAGS = -g -Wall -Iinclude
+
+# Linker flags
+LDFLAGS =
+
+# Directory names
+SRCDIR = src
+BUILDDIR = build
