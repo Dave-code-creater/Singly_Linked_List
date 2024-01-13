@@ -10,6 +10,10 @@ LDFLAGS =
 # Directory names
 SRCDIR = src
 BUILDDIR = build
+LIBDIR = lib
+
+# Lib name 
+LIB_NAME = sll
 
 # Object files to build
 OBJFILES = $(BUILDDIR)/main.o $(BUILDDIR)/sll.o
@@ -21,11 +25,21 @@ TARGET = $(BUILDDIR)/sll
 VPATH = $(SRCDIR)
 
 # Default target
-all: $(TARGET)
+
+all: $(TARGET) $(LIBDIR)/lib$(LIB_NAME).a $(LIBDIR)/lib$(LIB_NAME).so
+
 
 # Target to build the executable
 $(TARGET): $(OBJFILES)
 	$(CC) $(CFLAGS) -o $(TARGET) -ggdb $(OBJFILES) $(LDFLAGS)
+	
+# Target to build static library
+$(LIBDIR)/lib$(LIB_NAME).a: $(OBJFILES) | $(LIBDIR)
+	ar rcs $@ $^
+
+# Target to build dynamic library
+$(LIBDIR)/lib$(LIB_NAME).so: $(OBJFILES) | $(LIBDIR)
+	$(CC) $(CFLAGS) -o $@ $^
 
 # Target to build main.o
 $(BUILDDIR)/main.o: main.c include/sll.h | $(BUILDDIR)
@@ -39,6 +53,10 @@ $(BUILDDIR)/sll.o: sll.c include/sll.h | $(BUILDDIR)
 $(BUILDDIR):
 	mkdir -p $(BUILDDIR)
 
+# Create the library directory if it doesn't exist
+$(LIBDIR):
+	mkdir -p $(LIBDIR)
+	
 # Target to clean up object files and the executable
 clean:
 	rm -f $(OBJFILES) $(TARGET) *~
