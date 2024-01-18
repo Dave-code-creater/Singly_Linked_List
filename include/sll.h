@@ -24,8 +24,8 @@ typedef struct Node
 
 
 // Functions executions
-Node *Creating_Sll(int length);
 Node *Create_Node(int value);
+Node *Creating_Sll(int length);
 
 Node* Insert_At_Head(Node *head,Node *tmp);
 void Insert_At_Middle(Node *head,Node *tmp,int position);

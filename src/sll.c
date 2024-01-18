@@ -1,3 +1,9 @@
+/*
+Description: This is library function, implement the singly linked list data structure
+Author: Tan Dat Ta
+Version: 2.0
+License: GNU
+*/
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -75,16 +81,7 @@ Node *Creating_Sll(int length)
     return head; // Return the head of the linked list
 }
 
-// Function to free the memory of a singly linked list
-void Free_sll(Node *head)
-{
-    while (head != NULL)
-    {
-        Node *tmp = head;
-        head = head->next;
-        free(tmp); // Free each node in the list
-    }
-}
+
 
 // Function to print the elements of a singly linked list
 void Printing_Sll(Node *head)
@@ -290,4 +287,15 @@ void Write_Log(Node *head)
 
     fclose(fptr);
     printf("Successfully write to file\n");
+}
+
+// Function to free the memory of a singly linked list
+void Free_sll(Node *head)
+{
+    while (head != NULL)
+    {
+        Node *tmp = head;
+        head = head->next;
+        free(tmp); // Free each node in the list
+    }
 }
