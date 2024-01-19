@@ -48,19 +48,22 @@ Customize for Your Project: If desired, customize the functions or adapt them to
 ## Functions
 The project includes the following functions:
 
-Node *Creating_Sll(int length): Function to create a singly linked list with a specified number of nodes.
+- `Node *Creating_Sll(int length)`: Function to create a singly linked list with a specified number of nodes.
+- `void Free_sll(Node *head)`: Function to free the memory allocated for a singly linked list.
+- `Node* Create_Node(int value)`: Function to create a new node with a given value.
+- `void Printing_Sll(Node *head)`: Function to print the elements of a singly linked list.
+- `int Length(Node *head)`: Function to calculate the length of a singly linked list.
+- `void Priting_Inverse_Sll(Node *head)`: Function to print the elements of a singly linked list in reverse order.
+- `Node* InsertAtHead(Node* head, Node* tmp)`: Function to insert a node at the head of the linked list.
+- `void InsertAtMiddle(Node* head, Node* tmp, int position)`: Function to insert a node at a specified position in the linked list.
+- `void InsertAtTail(Node* head, Node* tmp)`: Function to insert a node at the tail of the linked list.
+- `Node* SortAsc(Node* head)`: Function to sort the elements of the linked list in ascending order.
+- `Node* SortDesc(Node* head)`: Function to sort the elements of the linked list in descending order.
+- `char* IsEmpty(Node* head)`: Function to check if the linked list is empty.
+- `void DeleteNode(Node* head, int value)`: Function to delete a node with the specified value from the linked list.
+- `void WriteLog(Node* head)`: Function to write the execution log to a file.
+- `int GetNumber()`: Function to read a positive integer from the user.
 
-void Free_sll(Node *head): Function to free the memory allocated for a singly linked list.
-
-Node* Create_Node(int value): Function to create a new node with a given value.
-
-void Printing_Sll(Node *head): Function to print the elements of a singly linked list.
-
-int Length(Node *head): Function to calculate the length of a singly linked list.
-
-void Priting_Inverse_Sll(Node *head): Function to print the elements of a singly linked list in reverse order.
-
-(Additional functions can be added as needed for your project.)
 
 ## Automation
 Dowload the package and run the shell scripts. I overwrite the file with chmod +x. You feel free to write.
