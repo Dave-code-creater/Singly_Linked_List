@@ -16,7 +16,7 @@ LIBDIR = lib
 LIB_NAME = sll
 
 # Object files to build
-OBJFILES = $(BUILDDIR)/main.o $(BUILDDIR)/sll.o
+OBJFILES = $(BUILDDIR)/main.o $(BUILDDIR)/sll.o $(BUILDDIR)/utils.o
 
 # Target executable
 TARGET = $(BUILDDIR)/sll
@@ -48,6 +48,11 @@ $(BUILDDIR)/main.o: main.c include/sll.h | $(BUILDDIR)
 # Target to build sll.o
 $(BUILDDIR)/sll.o: sll.c include/sll.h | $(BUILDDIR)
 	$(CC) $(CFLAGS) -c $< -o $@
+
+# Target to build the utils.o
+$(BUILDDIR)/utils.o: utils.c include/sll.h | $(BUILDDIR)
+	$(CC) $(CFLAGS) -c $< -o $@
+
 
 # Create the build directory if it doesn't exist
 $(BUILDDIR):
