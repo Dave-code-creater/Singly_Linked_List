@@ -63,6 +63,7 @@ $(LIBDIR):
 	mkdir -p $(LIBDIR)
 	
 # Target to clean up object files and the executable
+.PHONY : clean
 clean:
-	rm -f $(OBJFILES) $(TARGET) *~
-	rm -rf $(BUILDDIR)
+	-rm edit $(OBJFILES)
+

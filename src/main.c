@@ -1,26 +1,25 @@
 #include "sll.h"
 
-int main(void)
-{
+int main(void) {
     system("clear");
-    int length = Length_Input();
+    int length = LengthInput();
 
-    Node *First = Creating_Sll(length);
-    Write_Log(First);
+    Node* first = CreateSll(length);
+    WriteLog(first);
 
-    // Node* Third = Create_Node(129);
-    // Node *Second = Create_Node(20);
-    // Node* Fourth = Create_Node(30);
+    // Node* third = CreateNode(129);
+    // Node* second = CreateNode(20);
+    // Node* fourth = CreateNode(30);
 
-    // First = Insert_At_Head(First, Fourth);
-    // Insert_At_Middle(First, Second, 2);
-    // Insert_At_Tail(First, Third);
-    First = Sort_ASC(First);
-    // First = Sort_DESC(First);
-    
+    // first = InsertAtHead(first, fourth);
+    // InsertAtMiddle(first, second, 2);
+    // InsertAtTail(first, third);
+    first = SortAsc(first);
+    // first = SortDesc(first);
 
-    Printing_Sll(First);
-    Write_Log(First);
+    PrintSll(first);
+    WriteLog(first);
 
-    Free_sll(First);
+    FreeSll(first);
+    return 0;
 }
