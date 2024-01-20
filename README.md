@@ -59,6 +59,7 @@ Customize for Your Project: If desired, customize the functions or adapt them to
 
 The project includes the following functions:
 
+<<<<<<< HEAD
 The project includes the following functions:
 
 -   `Node *Creating_Sll(int length)`: Function to create a singly linked list with a specified number of nodes.
@@ -76,6 +77,24 @@ The project includes the following functions:
 -   `void DeleteNode(Node* head, int value)`: Function to delete a node with the specified value from the linked list.
 -   `void WriteLog(Node* head)`: Function to write the execution log to a file.
 -   `int GetNumber()`: Function to read a positive integer from the user.
+=======
+- `Node *Creating_Sll(int length)`: Function to create a singly linked list with a specified number of nodes.
+- `void Free_sll(Node *head)`: Function to free the memory allocated for a singly linked list.
+- `Node* Create_Node(int value)`: Function to create a new node with a given value.
+- `void Printing_Sll(Node *head)`: Function to print the elements of a singly linked list.
+- `int Length(Node *head)`: Function to calculate the length of a singly linked list.
+- `void Priting_Inverse_Sll(Node *head)`: Function to print the elements of a singly linked list in reverse order.
+- `Node* InsertAtHead(Node* head, Node* tmp)`: Function to insert a node at the head of the linked list.
+- `void InsertAtMiddle(Node* head, Node* tmp, int position)`: Function to insert a node at a specified position in the linked list.
+- `void InsertAtTail(Node* head, Node* tmp)`: Function to insert a node at the tail of the linked list.
+- `Node* SortAsc(Node* head)`: Function to sort the elements of the linked list in ascending order.
+- `Node* SortDesc(Node* head)`: Function to sort the elements of the linked list in descending order.
+- `char* IsEmpty(Node* head)`: Function to check if the linked list is empty.
+- `void DeleteNode(Node* head, int value)`: Function to delete a node with the specified value from the linked list.
+- `void WriteLog(Node* head)`: Function to write the execution log to a file.
+- `int GetNumber()`: Function to read a positive integer from the user.
+
+>>>>>>> 42e9447c9bdcf488988e4459721af3347eea8130
 
 ## Automation
 
@@ -118,4 +137,13 @@ int main()
     return 0;
 
 }
+<<<<<<< HEAD
 ```
+=======
+Include this README in your project repository to provide comprehensive documentation for users and contributors.
+
+css
+Copy code
+
+You can save this content as a `README.md` file in your project repository to provide clear and detailed documentation for your Singly Linked List (SLL) functions.
+>>>>>>> 42e9447c9bdcf488988e4459721af3347eea8130
