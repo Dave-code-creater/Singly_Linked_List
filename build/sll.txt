@@ -388,3 +388,17 @@ The time of executing the program: Fri Jan 12 16:51:17 2024
 The Linked List: 1 ---- >2 ---- >3 ---- >
 The Length of the Linked List: 3
 Is the Linked List empty: false
+
+
+The time of executing the program: Fri Jan 19 09:52:18 2024
+
+The Linked List: 1 ---- >2 ---- >3 ---- >
+The Length of the Linked List: 3
+Is the Linked List empty: false
+
+
+The time of executing the program: Fri Jan 19 09:52:18 2024
+
+The Linked List: 1 ---- >2 ---- >3 ---- >
+The Length of the Linked List: 3
+Is the Linked List empty: false

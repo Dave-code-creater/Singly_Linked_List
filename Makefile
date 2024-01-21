@@ -10,7 +10,7 @@ LDFLAGS =
 # Directory names
 SRCDIR = src
 BUILDDIR = build
-LIBDIR = lib
+LIBDIR = libs
 
 # Lib name 
 LIB_NAME = sll
